@@ -36,6 +36,13 @@ int AI(string* board){
         }
     }
 
+    if (board[4] == "o"){
+        int list[] = {1, 3, 7, 9};
+        int random = randomConner();
+        int output = list[random] - 1;
+        return output;
+    }
+
     if (board[4] == "."){
         return 4;
     }
